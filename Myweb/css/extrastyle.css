@@ -16,8 +16,8 @@
 .videokuang iframe{width: 530px;height: 300px; margin: 0;}
 .videowenzi h1{padding-bottom: 1rem;}
 html{font-size: 14px;}
+.lie1-1 div,.lie1-2 div,.lie1-3 div,.lie2-1 div,.lie2-2 div{height: 100px;padding-top: 20px;}
 
-}
 
 @media (max-width: 768px) {
  .myfoot{flex-direction: column}

@@ -44,9 +44,7 @@ h1,h2,h3,h4,h5,h6,ol,ul{
 	text-align: center;
 }
 
-.BG{
-	background-color: aqua;
-}
+.BG{background-color: aqua;}
 /*那个图标开始*/
 .fun{
 	width: 100%;
@@ -56,13 +54,27 @@ h1,h2,h3,h4,h5,h6,ol,ul{
 	color: white;
 }
 
-.intru i{
-	font-size: 6.25rem;
-}
-.fa-desktop:hover .fun p{
-	color: #ff0000;
-}
+.intru i{font-size: 6.25rem;}
+.intru p{font-weight: 800;}
+
+.fa-desktop:hover .fun p{color: #ff0000;}
 /*那个图标结束*/
+
+
+/*终极BS图文列开始*/
+.kuang1{text-align: center;color: rgba(255,255,255,0);}
+.kuang1 h1{font-weight: 400;}
+.kuang1 h5{font-weight: 200;}
+.lie1-1 div:hover,.lie1-2 div:hover,.lie1-3 div:hover,.lie2-1 div:hover,.lie2-2 div:hover{background: rgba(255, 255, 255, .8);color: rgba(66, 66, 66, 1);}
+
+.lie1-1 div,.lie1-2 div,.lie1-3 div{height: 60vh; padding-top: 24vh; transition: ease-in-out .3s; }
+.lie1-1{background-image: url(../img/background.png);}
+.lie1-2{background-image: url(../img/background.png);}
+.lie1-3{background-image: url(../img/background.png);}
+.lie2-1 div,.lie2-2 div{height: 40vh; padding-top: 16vh; transition: ease-in-out .3s;}
+.lie2-1{background-image: url(../img/background.png);}
+.lie2-2{background-image: url(../img/background.png);}
+/*终极BS图文列结束*/
 .wenzilan{
 	width: 100%;
 	background-color:#111622;
@@ -71,15 +83,15 @@ h1,h2,h3,h4,h5,h6,ol,ul{
 	text-align: center;
 	padding: 0.625rem;
 	color: #473B21;
-	
+	user-select: none;
 }
 
 .wenzi  h1{
-	padding-top: 1rem;
+	padding-top: 2rem;
 	transition: ease 1s; 
 }
 .wenzi  h6{
-	margin: 5% auto;
+	margin: 3% auto;
 	width: 70%;
 	transition: ease 1s; 
 }
@@ -112,6 +124,7 @@ h1,h2,h3,h4,h5,h6,ol,ul{
 	color: rgba(12,23,44,0.8);
 	transition: ease 1s;
 	margin-bottom: 1.25rem;
+	user-select: none;
 }
 .videowenzi:hover {
 	color: white;
