@@ -1,25 +1,4 @@
-@font-face {
-  font-family: 'webfont';
-  font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_3ecn00rcuqa.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_3ecn00rcuqa.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_3ecn00rcuqa.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_3ecn00rcuqa.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_3ecn00rcuqa.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_3ecn00rcuqa.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
-}
-.web-font{
-    font-family:"webfont" !important;
-    font-size:1.4rem;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-}
-/* 结束导入阿里字体 */
 
-html{
-	
-}
 body{
 	margin: 0;
 	padding: 0;
@@ -27,17 +6,11 @@ body{
 	font-size: 14px;
 	background: url(../img2/bgfix.jpg) no-repeat fixed center;
 	background-size:cover;
-	
-
 }
 
-a{
-	text-decoration: none;
-}
+a{text-decoration: none;}
 
-h1,h2,h3,h4,h5,h6,ol,ul{
-	list-style: none;
-}
+h1,h2,h3,h4,h5,h6,ol,ul{list-style: none;}
 
 .go{
 	font-size: 2.5rem;
@@ -84,23 +57,29 @@ h1,h2,h3,h4,h5,h6,ol,ul{
 	padding: 0.625rem;
 	color: #473B21;
 	user-select: none;
+	
+}
+.wenzi h1:hover,h6:hover{
+	animation: colorchange 2s ease-out 0s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes colorchange{
+	from{color: #473B21;}
+	to{color: white;}
 }
 
 .wenzi  h1{
 	padding-top: 2rem;
-	transition: ease 1s; 
 }
 .wenzi  h6{
 	margin: 3% auto;
 	width: 70%;
-	transition: ease 1s; 
 }
 
-.wenzi h1:hover,h6:hover{
-	background-image: linear-gradient(to top, red , yellow);
-	-webkit-background-clip:text;
-	color: transparent;
-}
+/* .wenzi h1:hover,h6:hover{
+
+} */
 .sp{
 	padding: 4rem 10rem;
 	flex-wrap: wrap;
@@ -155,16 +134,10 @@ h1,h2,h3,h4,h5,h6,ol,ul{
 }
 
 
-.left-column p{
-	font-size: 0.875rem;
-}
+.left-column p{font-size: 0.875rem;}
 
-.left-column-bottom p{
-	font-size: 1.125rem;
-}
-.left-column-bottom i{
-	margin-right: 0.625rem;
-}
+.left-column-bottom p{font-size: 1.125rem;}
+.left-column-bottom i{margin-right: 0.625rem;}
 .left-column-bottom ul{padding: 0;}
 .left-column-bottom ul li{
 	display: inline-block;
@@ -190,9 +163,7 @@ font-size: 1.25rem;
 	text-decoration: none;
 	color: white;
 }
-.mid-column ul li a:hover{
-	color: dimgray;
-}
+.mid-column ul li a:hover{color: dimgray;}
 
 .right-column{
 	flex: 1;
@@ -223,6 +194,38 @@ font-size: 1.25rem;
 	cursor: pointer;
 	transition: opacity .3s linear;
 }
-.right-column .btns:hover{
-	opacity: .7;
+.right-column .btns:hover{opacity: .7;}
+
+
+/* 这一行是定义根据滑轮位置进入动画 */
+.delighter{
+	transition: all 2s ease;
+	opacity: 0;
 }
+.videowenzi.delighter {
+	  transform: translateX(100%);
+   }
+.videokuang.delighter {
+	  transform: translateX(-100%);
+  }
+.wenzi.delighter{
+	transform: translateY(100%);
+}
+
+   /* the .started class is set when the top
+	  of [data-delighter] is at 0.75 of the viewport 
+	  (where 0 is top and 1 is bottom) */
+.delighter.started {
+	transform: none;
+	opacity: 1;
+}
+
+   /* an extra .ended state is set when the bottom 
+	  of [data-delighter] is at 0.75 of the viewport
+	  (where 0 is top and 1 is bottom) */
+	/* 这个是在滑到底部的时候添加效果 */
+/*   .foo.delighter.started.ended {
+	  border: solid red 10px;
+   } */
+  
+   /* 到这里结束动画 */
