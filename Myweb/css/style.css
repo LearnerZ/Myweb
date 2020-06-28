@@ -57,18 +57,7 @@ h1,h2,h3,h4,h5,h6,ol,ul{list-style: none;}
 	padding: 0.625rem;
 	color: #473B21;
 	user-select: none;
-	
 }
-.wenzi h1:hover,h6:hover{
-	animation: colorchange 2s ease-out 0s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-}
-@keyframes colorchange{
-	from{color: #473B21;}
-	to{color: white;}
-}
-
 .wenzi  h1{
 	padding-top: 2rem;
 }
@@ -103,10 +92,6 @@ h1,h2,h3,h4,h5,h6,ol,ul{list-style: none;}
 	color: rgba(12,23,44,0.8);
 	transition: ease 1s;
 	margin-bottom: 1.25rem;
-	user-select: none;
-}
-.videowenzi:hover {
-	color: white;
 }
 
 .videowenzi h1{
@@ -114,8 +99,6 @@ h1,h2,h3,h4,h5,h6,ol,ul{list-style: none;}
 	padding-bottom: 4rem;
 	text-align: center;
 }
-
-
 
 .myfoot{
 	display: flex;
@@ -199,19 +182,24 @@ font-size: 1.25rem;
 
 /* 这一行是定义根据滑轮位置进入动画 */
 .delighter{
-	transition: all 2s ease;
+	transition: all 2.5s ease;
 	opacity: 0;
 }
-.videowenzi.delighter {
-	  transform: translateX(100%);
-   }
+
 .videokuang.delighter {
 	  transform: translateX(-100%);
   }
 .wenzi.delighter{
 	transform: translateY(100%);
+	background: linear-gradient(45deg, red, yellow);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
+.videowenzi.delighter {
+	  transform: translateX(100%);
+	  color: white;
+   }
    /* the .started class is set when the top
 	  of [data-delighter] is at 0.75 of the viewport 
 	  (where 0 is top and 1 is bottom) */
