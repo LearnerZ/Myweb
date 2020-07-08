@@ -1,4 +1,4 @@
-
+html { overflow-x: hidden; overflow-y: scroll; }
 body{
 	margin: 0;
 	padding: 0;
@@ -36,17 +36,21 @@ h1,h2,h3,h4,h5,h6,ol,ul{list-style: none;}
 
 /*终极BS图文列开始*/
 .kuang1{text-align: center;color: rgba(255,255,255,0);}
-.kuang1 h1{font-weight: 400;}
+.kuang1 h1{font-weight: 400;font-size: large;}
 .kuang1 h5{font-weight: 200;}
-.lie1-1 div:hover,.lie1-2 div:hover,.lie1-3 div:hover,.lie2-1 div:hover,.lie2-2 div:hover{background: rgba(255, 255, 255, .8);color: rgba(66, 66, 66, 1);}
+.lie1-1 div:hover,.lie1-2 div:hover,.lie1-3 div:hover,.lie2-1 div:hover,.lie2-2 div:hover{background: rgba(255, 255, 255, .8);color: rgba(66, 66, 66, 1); transform: scale(1);}
 
-.lie1-1 div,.lie1-2 div,.lie1-3 div{height: 60vh; padding-top: 24vh; transition: ease-in-out .3s; }
-.lie1-1{background-image: url(../img/background.png);}
-.lie1-2{background-image: url(../img/background.png);}
-.lie1-3{background-image: url(../img/background.png);}
+.lie1-1 div,.lie1-2 div,.lie1-3 div{height: 60vh; padding-top: 24vh; transition: ease-in-out .3s;}
+.lie1-1{background-image: url(../img/tuwen/piano-362251_1280.jpg);}
+.lie1-2{background-image: url(../img/tuwen/architecture-1914309_1280.jpg);}
+.lie1-3{background-image: url(../img/tuwen/new-york-city-801867_1280.jpg);}
 .lie2-1 div,.lie2-2 div{height: 40vh; padding-top: 16vh; transition: ease-in-out .3s;}
-.lie2-1{background-image: url(../img/background.png);}
-.lie2-2{background-image: url(../img/background.png);}
+.lie2-1{background-image: url(../img/tuwen/camera-541213_1280.jpg);}
+.lie2-2{background-image: url(../img/tuwen/architecture-5031117_1280.jpg);}
+
+.lie1-1,.lie1-2,.lie1-3{background-size:180%;background-position: top center; transition: ease-in-out 3s;}
+.lie2-1,.lie2-2{background-size:150%;background-position: center center; transition: ease-in-out 3s;}
+.lie1-1:hover,.lie1-2:hover,.lie1-3:hover,.lie2-1:hover,.lie2-2:hover{background-size:100%;}
 /*终极BS图文列结束*/
 .wenzilan{
 	width: 100%;
@@ -217,3 +221,15 @@ font-size: 1.25rem;
    } */
   
    /* 到这里结束动画 */
+   
+   /* Js输入动画样式 */
+   // 模拟光标效果
+   @keyframes blink {
+     from { opacity: 0; }
+     to { opacity: 1; }
+   }
+   
+   .content::after {
+     content: '|';
+     animation: blink 1000ms infinite;
+   }
