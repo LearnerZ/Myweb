@@ -4,8 +4,6 @@ body{
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 14px;
-	background: url(../img2/bgfix.jpg) no-repeat fixed center;
-	background-size:cover;
 }
 
 a{text-decoration: none;}
@@ -70,9 +68,15 @@ h1,h2,h3,h4,h5,h6,ol,ul{list-style: none;}
 	width: 70%;
 }
 
-/* .wenzi h1:hover,h6:hover{
+/* 背景视频播放 */
+.bgvid{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+	z-index:-100;
+}
 
-} */
 .sp{
 	padding: 4rem 10rem;
 	flex-wrap: wrap;
@@ -229,7 +233,8 @@ font-size: 1.25rem;
      to { opacity: 1; }
    }
    
-   .content::after {
+   
+   #typing::after {
      content: '|';
-     animation: blink 1000ms infinite;
+     animation: blink 1s infinite;
    }

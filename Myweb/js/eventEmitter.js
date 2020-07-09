@@ -309,12 +309,12 @@
 
 
 var arr = [
-	{ type: 'wait', time: 1000 },
+	{ type: 'wait', time: 5000 },
     { type: 'text', text: '做一个个人网站需要什么呢？', time:100},
     { type: 'wait', time: 800 },
-    { type: 'text', text: '一台电脑和不怕麻烦的心。', time:100},
+    { type: 'text', text: '一台电脑和不砸电脑的好脾气。', time:100},
 	{ type: 'wait', time: 400 },
-	{ type: 'delete', num: 12},
+	{ type: 'delete', num: 14},
     { type: 'text', text: '那还需要哪些相关知识呢？', time:100},
 	{ type: 'wait', time: 800 },
     { type: 'text', text: 'Html、Css。', time: 100},
@@ -324,7 +324,7 @@ var arr = [
 	{ type: 'delete', num: 20},
     { type: 'text', text: '可能你会觉得这样的网站太单调了都不会动，那等你布置完后就可以用JavaScript让整个网站交互起来。弹出，动画，登陆接口想要什么就做什么，就像是一个工具箱一样！',time: 50},
     { type: 'wait', time: 400 },
-    { type: 'text', text: '如果你还觉得不够，还可以用已经整合好的Vue.js,react.js套件，直接用人家已经做好的，菜都不用自己做，摆盘就行了。', time:100 },
+    { type: 'text', text: '如果你还觉得不够，还可以用已经整合好的Vue.js,react.js套件，可以一整套一整套的搭建，这样前后端交互起来就方便多了问题也少很多。', time:100 },
 	{ type: 'wait', time: 800 },
 	{ type: 'text', text: '#@g79ds@!', time:100},
 	{ type: 'wait', time: 400 },
@@ -333,7 +333,7 @@ var arr = [
 	{ type: 'text', text: '水倒键盘上了。。', time:200},
 	{ type: 'delete', num: 8},
 	{ type: 'wait', time: 800 },
-	{ type: 'text', text: '还不赶快快动起手来！', time:100},
+	{ type: 'text', text: '还不赶快快动起手来！<(￣︶￣)↗[GO!]', time:100},
 	{ type: 'wait', time: 800 },
 ]
 

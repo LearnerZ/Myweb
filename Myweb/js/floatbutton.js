@@ -8,7 +8,7 @@
 		draggable:true,
         btn_config:[{
             icon:'fa fa-share-alt',
-			title:'弹出',
+			title:'我是可以拖动的哦！',
 			click: fnTest
         },{
             icon:'fa fa-weibo',
@@ -26,7 +26,7 @@
     });
 
     function fnTest() {
-        alert("hello world");
+        alert("我是可以拖动的哦！");
     }
 
     function fnClickStep() {
