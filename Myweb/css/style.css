@@ -190,6 +190,14 @@ font-size: 1.25rem;
 .right-column .btns:hover{opacity: .7;}
 
 
+.beian{
+	background-color: #0B0D15;
+	color: white;
+	text-align: center;
+	font-size: 0.8rem;
+	padding: 2rem;
+}
+
 
 /* 这一行是定义根据滑轮位置进入动画 */
 .delighter{
